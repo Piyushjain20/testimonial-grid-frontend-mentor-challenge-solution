@@ -1,0 +1,125 @@
+h2,h4,p{
+    margin: 0px;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    box-sizing: border-box;
+    background-color:  hsl(210, 46%, 95%);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+}
+.container{
+    display: flex;
+    width: 1220px;
+    align-items: stretch;
+}
+.flex-container{
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+    align-items:stretch;
+    flex-basis: 75%;
+    margin:0px;
+}
+.card{
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.35);
+    color: white;
+    align-items: flex-start;
+}
+.card p{
+    font-size: 13px;
+    opacity: 0.7;
+}
+.card h2{
+    margin-bottom: 25px ;
+    font-weight: 600;
+}
+.profile{
+    display: flex;
+    margin-top: -10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    padding: 0;
+    align-items: center;
+}
+.profile h4{
+    font-weight: 500;
+    opacity: .8;
+}
+.profile p{
+    opacity: .5;
+}
+img{
+    border-radius: 100px;
+    transform: scale(0.6);
+    margin-right: 10px;
+}
+.first{
+    flex-basis: 50%;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-color:hsl(263, 55%, 52%) ;
+    margin-bottom: 35px;
+}
+.second{
+    flex-basis: 25%;
+    background-color:hsl(217, 19%, 35%) ;
+    margin-bottom: 35px;
+}
+.third{
+    flex-basis: 25%;
+    background-color: white;
+    color:hsl(217, 19%, 35%) ; 
+}
+.forth{
+    flex-basis: 50%;
+    background-color:hsl(219, 29%, 14%) ;
+    
+}
+.fifth{
+    flex-basis: 100%;
+    color:hsl(217, 19%, 35%) ; 
+    background-color: white;
+}
+.flex-container1{
+    display: flex;
+    align-items: stretch;
+    flex-basis: 20%;
+}
+@media (max-width:920px){
+    body{
+        padding: 10%;
+    }
+    .flex-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .third,.forth{
+        margin-bottom: 35px;
+    }
+}
+@media (max-width:576px){
+    body{
+        padding: 10% 5%;
+    }
+    .flex-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .third,.forth{
+        margin-bottom: 35px;
+    }
+}
